@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografador de Texto</title>
+    <link rel="shortcut icon" href="images/917e57cf-646a-43f2-b241-c7f705842c6e.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css,/styles.css">
+    <script src="javaScript/script.js"></script>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <h1>Criptografador de Texto</h1>
+        <div class="input-output-container">
+
+            <textarea id="inputText" placeholder="Digite seu texto"></textarea>
+            <div id="status-container">
+
+                <p id="status-text">Nenhum texto encontrado</p>
+            </div>
+        </div>
+        <button onclick="encryptText()">Criptografar</button>
+        <button onclick="decryptText()">Descriptografar</button>
+
+        <textarea id="outputText" readonly placeholder="criptografado/Descriptografado"></textarea>
+        <button id="copyButton" style="display:none;" onclick="copyText()">Copiar Texto</button>
+    </div>
+</body>
+</html>
